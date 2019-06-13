@@ -66,13 +66,13 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* Copy and paste your work from yesterday here and start to refactor into flex box */
 .container{
 	max-width: 61.25em;
 	margin: 0 auto;
 }
 /*setting up media query at max-with of 800px for container */
-@media(max-width:800px){
+@media(max-width:50em){
     .container{
         padding: 10px;
     }
@@ -81,10 +81,10 @@ h1, h2, h3, h4, h5 {
 header{
 	background: #BEBEBE;
 	margin: 5em 0 0 0;
- 
+    
  }
  /*Media query for header*/
- @media (max-width:800px){
+ @media (max-width:50em){
     header{
         max-width: 100%; 
     }
@@ -102,24 +102,25 @@ header nav{
     border-bottom: 1px #000000 solid;
     padding: 20px 0px 20px 0px;
 }
-/*anchor tag div*/
+/*Setting up media query for a max with of 800px to style header nav*/
 
-@media(max-width:800px){
+@media (max-width:50em){
+    header nav{
+        max-width: 50em;
+        flex-flow:row wrap-reverse;
+
+    }
+}
+
+
+/*anchor tag div*/
+@media(max-width:50em){
     nav .anchor-tags{
         margin: 0 auto;
     }
 }
 
 
-/*Setting up media query for a max with of 800px to style header nav*/
-
-@media (max-width:800px){
-    header nav{
-        max-width: 800px;
-        flex-flow:row wrap-reverse;
-
-    }
-}
 header nav .anchor-tags a{
 	text-decoration: none;
 	margin: 1em;
@@ -153,23 +154,33 @@ nav .logo-div{
 	flex-flow: row wrap;
 	margin: 2em 0em;	 
 }
+/*Setting up media query at max-width od 800px*/
+@media(max-width:50em){
+    .container .first-section{
+        max-width: 100;
+        background: red;
+        margin-top: 6em;
+        justify-content: center;
+    }
+}
 	
 section .main-title{
-	width: 450px;
+	width: 48%;
 	text-align: center;
 	font-size: 3.75em;
 }
 
 section .main-title .get-started{
-	padding: 5px 10px;
+    padding: 5px 10px;
 	width: 180px;
 	height: 40px;
 	border-radius: 5px;
 	font-weight: bold
 }
-  .mid-page-image{
-	width: 100%; 
-	margin: 10px 0px;
+/*Media query to target jumbotron image*/
+@media(max-width:50em){
+    .first-section .header-img{
+	display: none;
 } 
 .mid-page-image img{
 	width: 98%;
