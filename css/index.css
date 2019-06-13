@@ -108,15 +108,57 @@ header nav{
     header nav{
         max-width: 50em;
         flex-flow:row wrap-reverse;
-
     }
 }
 
+/*@media max  with 500px for nav*/
+@media (max-width:500px){
+    header{
+        margin-top: 0px; 
+    }
+    header nav{
+        max-width: 100%;
+        position: relative;
+        flex-direction:column-reverse;
+        justify-content: flex-start; 
+        border-bottom: none; 
+    }
+}
+@media (max-width:500px){
+    header nav .anchor-tags{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        margin: 0px;
+    }
+    header nav .logo-div{
+       margin: 0px;
+       width:98%;
+       padding: 10px;
+    }
+}
+/*setting a border bottom for each element at max-width of 500px */
+@media(max-width:500px){
+     /* nav .anchor-tags a, */
+  
+     .logo-div img, .logo-div .logo{
+        margin-left: 35%;
+     }
+      nav hr{
+        border: 0;
+        display: block;
+        clear: both;
+        width: 98%;
+        background-color: grey;
+        height: 1px; 
+     }
 
+}
 /*anchor tag div*/
 @media(max-width:50em){
     nav .anchor-tags{
         margin: 0 auto;
+        width: 98%;
     }
 }
 
@@ -128,7 +170,7 @@ header nav .anchor-tags a{
 	padding: 10px;
 	text-align: center;
 	transition: 0.1s;
-    border-radius: 20px;
+    /* border-radius: 20px; */
     font-weight: bold;  
 }
 header nav .anchor-tags a:hover{
