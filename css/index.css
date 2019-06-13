@@ -158,7 +158,6 @@ nav .logo-div{
 @media(max-width:50em){
     .container .first-section{
         max-width: 100;
-        background: red;
         margin-top: 6em;
         justify-content: center;
     }
