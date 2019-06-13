@@ -71,26 +71,56 @@ h1, h2, h3, h4, h5 {
 	max-width: 61.25em;
 	margin: 0 auto;
 }
+/*setting up media query at max-with of 800px for container */
+@media(max-width:800px){
+    .container{
+        padding: 10px;
+    }
+}
 
 header{
 	background: #BEBEBE;
 	margin: 5em 0 0 0;
  
  }
+ /*Media query for header*/
+ @media (max-width:800px){
+    header{
+        max-width: 100%; 
+    }
+}
 
 header nav{
 	width: 61.25em;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
     position: fixed;
     top: 0px;
     background-color: white;
     border-bottom: 1px #000000 solid;
-	
+    padding: 20px 0px 20px 0px;
 }
-header nav a{
+/*anchor tag div*/
+
+@media(max-width:800px){
+    nav .anchor-tags{
+        margin: 0 auto;
+    }
+}
+
+
+/*Setting up media query for a max with of 800px to style header nav*/
+
+@media (max-width:800px){
+    header nav{
+        max-width: 800px;
+        flex-flow:row wrap-reverse;
+
+    }
+}
+header nav .anchor-tags a{
 	text-decoration: none;
 	margin: 1em;
 	color:grey;
@@ -100,15 +130,20 @@ header nav a{
     border-radius: 20px;
     font-weight: bold;  
 }
-header nav  a:hover{
+header nav .anchor-tags a:hover{
 	background: grey;
 	color: aliceblue;
 	transition: .8s;
 }
-nav :last-child{
-	margin-left: auto
-}
 
+nav .logo-div{
+    right: 0px;
+}
+ @media(max-width:800px){
+     .logo-div{
+         margin: 0 auto;
+     }
+ }
 
 
 .container section{
