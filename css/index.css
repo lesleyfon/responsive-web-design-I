@@ -210,10 +210,7 @@ nav .logo-div{
     flex-flow: row wrap;
     margin: 2em 0em;
 }
-.first-section{
-    margin-top: 8em;	 
-    margin-bottom: 2em;	 
-}
+
 /*Setting up media query at max-width od 800px*/
 @media(max-width:50em){
     .container .first-section{
@@ -235,6 +232,10 @@ section .main-title .get-started{
 	height: 40px;
 	border-radius: 5px;
 	font-weight: bold
+}
+.container .first-section {
+    margin-top: 8em;	 
+    margin-bottom: 2em;	 
 }
 /*Media query to target jumbotron image*/
 @media(max-width:50em){
