@@ -124,6 +124,17 @@ header nav{
         border-bottom: none; 
     }
 }
+
+header nav .anchor-tags{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    margin: 0px;    
+}
+ nav hr{
+    visibility: hidden;
+}
+
 @media (max-width:500px){
     header nav .anchor-tags{
         display: flex;
@@ -139,14 +150,12 @@ header nav{
 }
 /*setting a border bottom for each element at max-width of 500px */
 @media(max-width:500px){
-     /* nav .anchor-tags a, */
-  
      .logo-div img, .logo-div .logo{
         margin-left: 35%;
      }
       nav hr{
+          visibility: visible;
         border: 0;
-        display: block;
         clear: both;
         width: 98%;
         background-color: grey;
@@ -198,8 +207,12 @@ nav .logo-div{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	flex-flow: row wrap;
-	margin: 2em 0em;	 
+    flex-flow: row wrap;
+    margin: 2em 0em;
+}
+.first-section{
+    margin-top: 8em;	 
+    margin-bottom: 2em;	 
 }
 /*Setting up media query at max-width od 800px*/
 @media(max-width:50em){
