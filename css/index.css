@@ -238,29 +238,42 @@ section .main-title .get-started{
 	justify-content: flex-end;
 
 }
-
-
+}
 .main-section section .features, .main-section section .about{
-	width:45%; 
+    width:45%; 
 	line-height: 20px;
-
-}
-@media (max-width:500px) {
-    .main-section{
-        flex-direction: column;
-        flex-wrap: nowrap;
-    }
     
-    .main-section section .features, .main-section section .about{
-        width: 98%;
-    }
 }
+    @media (max-width:500px) {
+        .main-section{
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+        
+        .main-section section .features, .main-section section .about{
+            width: 98%;
+        }
+    }
+
 
 
 .second-section{
 	width: 33%;
 	line-height: 20px;
 }
+
+@media (max-width:500px) {
+    .main-section section{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    
+#services, #product, #vision{
+    width: 98%;
+}
+    
+}
+
 address nav a {
 	text-decoration: none;
 	line-height: 1.6 ;
